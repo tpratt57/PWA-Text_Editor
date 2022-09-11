@@ -37,7 +37,7 @@ export const putDb = async (content) => {
 }
 
 // TODO: Add logic for a method that gets all the content from the database
-const getDb = async () => {
+export const getDb = async () => {
   console.log('GET from the database')
 
   // Generate db connection and select version
