@@ -1,31 +1,33 @@
 {
-  "name": "pwa-text-editor",
+  "name": "pwa-text_editor",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
     "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
+    "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
-    "client": "cd client && npm start"
+    "install": "cd client && npm install",
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tpratt57/PWA-Text_Editor.git"
+    "url": "git+https://github.com/magickw/TextEditor.git"
   },
   "author": "",
-  "license": "UNLICENSED",
-  "homepage": "https://github.com/tpratt57/PWA-Text_Editor#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "workbox": "^0.0.0"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magickw/TextEditor/issues"
   },
-
+  "homepage": "https://github.com/magickw/TextEditor#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.19"
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^5.69.1"
   }
 }
