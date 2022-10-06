@@ -1,7 +1,7 @@
 # Progressive Web Applications (PWA) Challenge: Text Editor
 <p align="center">
 <p align="center">
-    <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg"></a>
+    <img width="50" height="50" src="https://webpack.js.org/assets/icon-square-big.svg"></a>
     <img src="https://img.shields.io/github/repo-size/tpratt57/PWA-Text_Editor" />
     <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/express-orange" />
